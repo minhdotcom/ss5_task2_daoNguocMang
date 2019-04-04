@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss5_task2_daoNguocMang</title>
+</head>
+<body>
+<script>
+    var array = [0,1,2,3,4,5];
+    // array.reverse();
+    var element;
+    var i = 0;
+    document.write(array.length + '<br/>');
+    while (i * 2 < array.length) {
+        element = array[i];
+        array[i] = array [array.length - i - 1];
+        array[array.length - i - 1] = element;
+        i++;
+    }
+    document.write(array);
+</script>
+</body>
+</html>
